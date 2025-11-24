@@ -65,4 +65,3 @@ void loop()
 
   delay(50);
 }
-// xin chào test thử
