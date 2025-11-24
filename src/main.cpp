@@ -6,7 +6,7 @@ char aesKey[] = "abcdefghijklmnop";
 SecureBleKeyboard bleKeyboard;
 const int BUTTON_PIN = 17;
 const int LED_PIN = 0; // LED báo trạng thái
-const int LED_CONNECT =25;
+const int LED_CONNECT = 25;
 void setup()
 {
   Serial.begin(115200);
@@ -54,7 +54,7 @@ void loop()
     // Trạng thái khác -> LED tắt
     digitalWrite(LED_PIN, LOW);
   }
-  if (state == STATE_CONNECTED) 
+  if (state == STATE_CONNECTED)
   {
     digitalWrite(LED_CONNECT, HIGH);
   }
@@ -63,6 +63,6 @@ void loop()
     digitalWrite(LED_CONNECT, LOW);
   }
 
-
   delay(50);
 }
+// xin chào test thử
